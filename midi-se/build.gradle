@@ -1,0 +1,31 @@
+apply from: "${System.getenv("niagara_home")}/etc/gradle/niagara.gradle"
+apply plugin: "idea"
+
+description = "Midi Driver"
+
+ext {
+  name            = "midi"
+  project.group   = "niagara"
+  project.version = "1.0"
+}
+
+niagaraModule {
+  preferredSymbol = "midi"
+  moduleName = "midi"
+  runtimeProfile = "se"
+}
+
+dependencies {
+  compile "Tridium:baja:4.0" 
+  compile "Tridium:nre:4.0" 
+  compile "Tridium:alarm-rt:4.0"
+  compile "Tridium:driver-rt:4.0"
+  compile "Tridium:control-rt:4.0"
+  compile "Tridium:ndriver-rt:4.0"
+
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

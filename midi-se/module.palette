@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p m="b=baja" t="b:UnrestrictedFolder">
+
+ <p n="MidiNetwork" m="x=midi" t="x:MidiNetwork"/>
+ <p n="MidiDevice" t="x:MidiDevice"/>
+ <p n="MidiDeviceFolder" t="x:MidiDeviceFolder"/>
+
+ <p n="MidiPointFolder" t="x:MidiPointFolder"/>
+
+</p>
+</bajaObjectGraph>

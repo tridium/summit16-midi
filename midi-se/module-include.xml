@@ -1,0 +1,26 @@
+<!-- Types -->
+<types>
+  <!-- com.niagara.midi -->
+  <!--com.niagara.midi-->
+  <type class="com.niagara.midi.BMidiNetwork" name="MidiNetwork"/>
+  <type class="com.niagara.midi.BMidiDevice" name="MidiDevice"/>
+  <type class="com.niagara.midi.BMidiDeviceFolder" name="MidiDeviceFolder"/>
+  <!-- com.niagara.midi.learn -->
+  <!--com.niagara.midi.learn-->
+  <type class="com.niagara.midi.learn.BMidiDeviceDiscoveryPreferences" name="MidiDeviceDiscoveryPreferences"/>
+  <type class="com.niagara.midi.learn.BMidiDeviceDiscoveryLeaf" name="MidiDeviceDiscoveryLeaf"/>
+
+  <!-- com.niagara.midi.message-->
+  <type class="com.niagara.midi.message.BMidiMessage" name="MidiMessage"/>
+  <!--com.niagara.midi.point-->
+  <type class="com.niagara.midi.point.BMidiPointDeviceExt" name="MidiPointDeviceExt"/>
+  <type class="com.niagara.midi.point.BMidiPointFolder" name="MidiPointFolder"/>
+  <type class="com.niagara.midi.point.BMidiProxyExt" name="MidiProxyExt"/>
+  <type class="com.niagara.midi.point.BMidiPointDiscoveryPreferences" name="MidiPointDiscoveryPreferences"/>
+  <type class="com.niagara.midi.point.BMidiPointDiscoveryLeaf" name="MidiPointDiscoveryLeaf"/>
+  <type class="com.niagara.midi.point.BMidiControlChangeProxyExt" name="MidiControlChangeProxyExt"/>
+  <type class="com.niagara.midi.point.BMidiNoteProxyExt" name="MidiNoteProxyExt"/>
+  <type class="com.niagara.midi.point.BMidiPitchWheelProxyExt" name="MidiPitchWheelProxyExt"/>
+  <!--com.niagara.midi.device-->
+  <type class="com.niagara.midi.device.BApcMiniButtonProxyExt" name="ApcMiniButtonProxyExt"/>
+</types>

@@ -1,0 +1,123 @@
+apply from: "${System.getenv("niagara_home")}/etc/gradle/niagara.gradle"
+apply plugin: "idea"
+
+
+ext {
+  name = "midi"
+  project.version = "1.0"
+  project.group = "niagara"
+  description = "Midi Driver UX views"
+}
+
+niagaraModule {
+  preferredSymbol = "midi"
+  moduleName = "midi"
+  runtimeProfile = "ux"
+}
+
+dependencies {
+  compile 'Tridium:baja:4.0'
+  compile 'Tridium:bajaScript-ux:4.0'
+  compile 'Tridium:bajaux-ux:4.0'
+  compile 'Tridium:box-rt:4.0'
+  compile 'Tridium:driver-rt:4.0'
+  compile 'Tridium:hx-wb:4.0'
+  compile 'Tridium:js-ux:4.0'
+  compile 'Tridium:ndriver-rt:4.0'
+  compile 'Tridium:nre:4.0'
+  compile 'Tridium:web-rt:4.0'
+  compile 'Tridium:webEditors-ux:4.0'
+  compile 'niagara:midi-se:1.0'
+}
+
+jar {
+  from('src') {
+    include 'jsdoc/'
+    include 'rc/'
+  }
+}
+
+moduleTestJar {
+  from('srcTest') {
+    include 'rc/'
+  }
+}
+
+
+
+niagaraRjs {
+  builds = [
+    'midi': [
+      rootDir: 'src/rc',
+      include: [
+        'nmodule/midi/rc/audio/AudioContext',
+        'nmodule/midi/rc/baja/LFO',
+        'nmodule/midi/rc/baja/MidiMessage',
+        'nmodule/midi/rc/baja/SynthesizerPreset',
+        'nmodule/midi/rc/baja/SynthesizerVoice',
+        'nmodule/midi/rc/baja/fx/Delay',
+        'nmodule/midi/rc/baja/fx/Distortion',
+        'nmodule/midi/rc/baja/fx/Effects',
+        'nmodule/midi/rc/baja/fx/IEffectMixin',
+        'nmodule/midi/rc/fe/ADSREnvelopeEditor',
+        'nmodule/midi/rc/fe/LaunchpadProWidget',
+        'nmodule/midi/rc/fe/MidiMessageEditor',
+        'nmodule/midi/rc/fe/SynthesizerEditor'
+      ]
+    ]
+  ]
+
+  options = [
+    //BajaScript and lexicons cannot legitimately start without running a
+    //station, so disable these plugins outright. Note that this not a standard
+    //r.js option - it's only used by the niagara-rjs plugin.
+    disablePlugins: [ 'baja', 'lex', 'css' ],
+
+    //If you're sharing this code with other modules that use Handlebars,
+    //it's likely these libraries will already be in the browser cache, so
+    //it makes sense to exclude them from the build. If you're certain this
+    //will be a standalone app, it's okay to include these libraries in the
+    //final build to save a few HTTP calls on first load.
+    exclude: [ 'Handlebars', 'underscore', 'hbs' ],
+
+    //I18N in the require-handlebars-plugin is not currently supported for
+    //Niagara and must be manually disabled.
+    //Auto-registration of helpers expects them to be in the /template/helpers
+    //directory. It's best to disable this and explicitly register your
+    //helpers with Handlebars.registerHelper().
+    hbs: [
+      disableHelpers: true,
+      disableI18n: true
+    ],
+
+    //Set up paths the build needs to know about.
+    paths: [
+      //Point midi module at src directory, using the nmodule convention
+      'nmodule/midi': 'src',
+
+      //exclude JS files from other modules
+      'nmodule/js': 'empty:',
+      'nmodule/webEditors': 'empty:',
+      'jquery': 'empty:',
+      'bajaScript': 'empty:',
+      'bajaux': 'empty:',
+      'd3': 'empty:',
+      'Promise': 'empty:',
+
+      //make Handlebars and associated libraries available to run during the
+      //build process, as templates will be precompiled.
+      //Note that if you need to pull module resources from other modules,
+      //they must be included in the Gradle file as compile-time dependencies.
+      'Handlebars': moduleResource('js-ux', 'rc/handlebars/handlebars-v2.0.0'),
+      'hbs': moduleResource('js-ux', 'rc/require-handlebars-plugin/hbs'),
+      'i18nprecompile': moduleResource('js-ux', 'rc/require-handlebars-plugin/hbs/i18nprecompile'),
+      'json2': moduleResource('js-ux', 'rc/require-handlebars-plugin/hbs/json2'),
+      'underscore': moduleResource('js-ux', 'rc/underscore/underscore')
+    ],
+
+    // RequireJS optimization with Rhino can occasionally cause a stack
+    // overflow if a module is particularly complex and the default JVM stack
+    // size is set too low. Adjust stack size as needed.
+    rhinoJvmArgs: [ '-Xss4m' ]
+  ]
+}

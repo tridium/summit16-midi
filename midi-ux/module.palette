@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" reversibleEncodingValidator="[null.1]=" >
+<p h="1" m="b=baja" t="b:Folder">
+ <!-- /Types -->
+ <p n="Types" h="2" t="b:Folder">
+  <p n="wsAnnotation" t="b:WsAnnotation" v="30,16,8"/>
+  <!-- /Types/Synthesizer -->
+  <p n="Synthesizer" h="9" m="midi=midi" t="midi:Synthesizer">
+   <p n="presets" h="a" t="b:UnrestrictedFolder">
+   </p>
+  </p>
+  <!-- /Types/SynthesizerPreset -->
+  <p n="SynthesizerPreset" h="f" t="midi:SynthesizerPreset">
+   <p n="effects" h="10" t="midi:Effects">
+   </p>
+  </p>
+  <!-- /Types/SynthesizerVoice -->
+  <p n="SynthesizerVoice" h="4" t="midi:SynthesizerVoice">
+   <p n="lfo" h="80" t="midi:LFO">
+   </p>
+  </p>
+  <!-- /Types/Delay -->
+  <p n="Delay" h="e" t="midi:Delay">
+  </p>
+  <!-- /Types/Distortion -->
+  <p n="Distortion" h="46" t="midi:Distortion">
+  </p>
+ </p>
+ <!-- /Presets -->
+ <p n="Presets" h="47" t="b:UnrestrictedFolder">
+  <!-- /Presets/space$20cello -->
+  <p n="space$20cello" h="9a" t="midi:SynthesizerPreset">
+   <p n="effects" h="9b" t="midi:Effects">
+    <!-- /Presets/space$20cello/effects/Delay -->
+    <p n="Delay" h="9c" t="midi:Delay">
+     <p n="amount" v="0.259"/>
+     <p n="delayTime" v="312.0"/>
+    </p>
+   </p>
+   <!-- /Presets/space$20cello/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="9d" t="midi:SynthesizerVoice">
+    <p n="level" v="0.552"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="267.0"/>
+     <p n="delay" v="77.0"/>
+     <p n="sustain" v="0.509"/>
+     <p n="release" v="403.0"/>
+    </p>
+    <p n="filterLevel" v="0.731"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="126.0"/>
+     <p n="delay" v="109.0"/>
+     <p n="sustain" v="0.509"/>
+     <p n="release" v="667.0"/>
+    </p>
+    <p n="lfo" h="9e" t="midi:LFO">
+     <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+     <p n="frequency" v="6.7"/>
+     <p n="shared" v="false"/>
+     <p n="target" t="midi:LFOTargetType" v="filter"/>
+    </p>
+    <p n="detune" v="-5.0"/>
+   </p>
+   <!-- /Presets/space$20cello/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="9f" t="midi:SynthesizerVoice">
+    <p n="level" v="0.599"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="116.0"/>
+     <p n="delay" v="79.0"/>
+     <p n="sustain" v="0.0"/>
+     <p n="release" v="73.0"/>
+    </p>
+    <p n="filterType" t="midi:FilterType" v="highpass"/>
+    <p n="filterLevel" v="0.429"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="84.0"/>
+     <p n="sustain" v="0.065"/>
+    </p>
+    <p n="lfo" h="a0" t="midi:LFO">
+     <p n="frequency" v="57.1"/>
+     <p n="amount" v="0.9"/>
+     <p n="target" t="midi:LFOTargetType" v="filter"/>
+    </p>
+    <p n="detune" v="5.0"/>
+   </p>
+   <!-- /Presets/space$20cello/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="a1" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.41"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="239.0"/>
+     <p n="sustain" v="1.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="101.0"/>
+     <p n="sustain" v="1.0"/>
+    </p>
+    <p n="lfo" h="a2" t="midi:LFO">
+    </p>
+    <p n="detune" v="-1200.0"/>
+   </p>
+  </p>
+  <!-- /Presets/senhor$20o$2ej$2e$20thang -->
+  <p n="senhor$20o$2ej$2e$20thang" h="a3" t="midi:SynthesizerPreset">
+   <p n="effects" h="a4" t="midi:Effects">
+    <!-- /Presets/senhor$20o$2ej$2e$20thang/effects/Delay -->
+    <p n="Delay" h="a5" t="midi:Delay">
+     <p n="amount" v="0.146"/>
+     <p n="delayTime" v="350.0"/>
+    </p>
+   </p>
+   <!-- /Presets/senhor$20o$2ej$2e$20thang/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="a6" t="midi:SynthesizerVoice">
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="105.0"/>
+     <p n="sustain" v="0.216"/>
+     <p n="release" v="441.0"/>
+    </p>
+    <p n="filterLevel" v="0.137"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="0.0"/>
+     <p n="sustain" v="0.65"/>
+     <p n="release" v="1000.0"/>
+    </p>
+    <p n="lfo" h="a7" t="midi:LFO">
+     <p n="oscillatorType" t="midi:OscillatorType" v="sawtooth"/>
+     <p n="frequency" v="9.3"/>
+     <p n="amount" v="8.4"/>
+     <p n="shared" v="false"/>
+     <p n="target" t="midi:LFOTargetType" v="filter"/>
+    </p>
+   </p>
+   <!-- /Presets/senhor$20o$2ej$2e$20thang/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="a8" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.057"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="1.0"/>
+     <p n="release" v="1000.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="0.0"/>
+     <p n="sustain" v="0.329"/>
+     <p n="release" v="1000.0"/>
+    </p>
+    <p n="lfo" h="a9" t="midi:LFO">
+     <p n="frequency" v="3.4"/>
+     <p n="amount" v="1.1"/>
+     <p n="target" t="midi:LFOTargetType" v="volume"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+  </p>
+  <!-- /Presets/jub$20sonlett -->
+  <p n="jub$20sonlett" h="aa" t="midi:SynthesizerPreset">
+   <p n="effects" h="ab" t="midi:Effects">
+    <!-- /Presets/jub$20sonlett/effects/Delay -->
+    <p n="Delay" h="ac" t="midi:Delay">
+     <p n="amount" v="0.269"/>
+     <p n="delayTime" v="160.0"/>
+    </p>
+    <!-- /Presets/jub$20sonlett/effects/Distortion -->
+    <p n="Distortion" h="ad" t="midi:Distortion">
+     <p n="amount" v="15.6"/>
+    </p>
+   </p>
+   <!-- /Presets/jub$20sonlett/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="ae" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="triangle"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="af" t="midi:LFO">
+    </p>
+   </p>
+   <!-- /Presets/jub$20sonlett/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="b0" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.354"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="16.0"/>
+     <p n="delay" v="51.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="b1" t="midi:LFO">
+     <p n="frequency" v="0.7"/>
+     <p n="amount" v="100.0"/>
+     <p n="target" t="midi:LFOTargetType" v="filter"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+  </p>
+  <!-- /Presets/funk$20achiever -->
+  <p n="funk$20achiever" h="b2" t="midi:SynthesizerPreset">
+   <p n="effects" h="b3" t="midi:Effects">
+    <!-- /Presets/funk$20achiever/effects/Distortion -->
+    <p n="Distortion" h="b4" t="midi:Distortion">
+     <p n="amount" v="70.3"/>
+    </p>
+    <!-- /Presets/funk$20achiever/effects/Delay -->
+    <p n="Delay" h="b5" t="midi:Delay">
+     <p n="amount" v="0.071"/>
+     <p n="delayTime" v="274.0"/>
+    </p>
+   </p>
+   <!-- /Presets/funk$20achiever/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="b6" t="midi:SynthesizerVoice">
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.348"/>
+    </p>
+    <p n="lfo" h="b7" t="midi:LFO">
+     <p n="frequency" v="5.2"/>
+     <p n="amount" v="45.8"/>
+     <p n="target" t="midi:LFOTargetType" v="filter"/>
+    </p>
+    <p n="detune" v="-1210.0"/>
+   </p>
+   <!-- /Presets/funk$20achiever/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="b8" t="midi:SynthesizerVoice">
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="99.0"/>
+    </p>
+    <p n="lfo" h="b9" t="midi:LFO">
+     <p n="frequency" v="10.8"/>
+     <p n="amount" v="2.9"/>
+    </p>
+    <p n="detune" v="-1190.0"/>
+   </p>
+   <!-- /Presets/funk$20achiever/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="ba" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="triangle"/>
+    <p n="level" v="0.514"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1.0"/>
+    </p>
+    <p n="lfo" h="bb" t="midi:LFO">
+    </p>
+    <p n="detune" v="-1200.0"/>
+   </p>
+   <!-- /Presets/funk$20achiever/voice3 -->
+   <p n="voice3" x="alwaysExpand=b:true" h="bc" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="noise"/>
+    <p n="level" v="0.108"/>
+    <p n="filterLevel" v="0.571"/>
+    <p n="lfo" h="bd" t="midi:LFO">
+    </p>
+   </p>
+  </p>
+  <!-- /Presets/baked -->
+  <p n="baked" h="be" t="midi:SynthesizerPreset">
+   <p n="effects" h="bf" t="midi:Effects">
+    <!-- /Presets/baked/effects/Delay -->
+    <p n="Delay" h="c0" t="midi:Delay">
+     <p n="amount" v="0.278"/>
+    </p>
+   </p>
+   <!-- /Presets/baked/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="c1" t="midi:SynthesizerVoice">
+    <p n="filterLevel" v="0.297"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+     <p n="delay" v="378.0"/>
+     <p n="sustain" v="1.0"/>
+    </p>
+    <p n="lfo" h="c2" t="midi:LFO">
+     <p n="frequency" v="1.3"/>
+     <p n="amount" v="1.1"/>
+    </p>
+   </p>
+   <!-- /Presets/baked/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="c3" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.297"/>
+    <p n="lfo" h="c4" t="midi:LFO">
+     <p n="frequency" v="96.6"/>
+     <p n="amount" v="49.5"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+   <!-- /Presets/baked/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="c5" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.203"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="40.0"/>
+    </p>
+    <p n="lfo" h="c6" t="midi:LFO">
+    </p>
+   </p>
+  </p>
+  <!-- /Presets/nu$2dmaitre$27d -->
+  <p n="nu$2dmaitre$27d" h="c7" t="midi:SynthesizerPreset">
+   <p n="effects" h="c8" t="midi:Effects">
+    <!-- /Presets/nu$2dmaitre$27d/effects/Delay -->
+    <p n="Delay" h="c9" t="midi:Delay">
+     <p n="amount" v="0.14"/>
+     <p n="delayTime" v="216.0"/>
+    </p>
+    <!-- /Presets/nu$2dmaitre$27d/effects/Distortion -->
+    <p n="Distortion" h="ca" t="midi:Distortion">
+     <p n="amount" v="33.5"/>
+    </p>
+   </p>
+   <!-- /Presets/nu$2dmaitre$27d/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="cb" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.75"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="482.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterType" t="midi:FilterType" v="notch"/>
+    <p n="filterLevel" v="0.665"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="416.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="cc" t="midi:LFO">
+    </p>
+   </p>
+   <!-- /Presets/nu$2dmaitre$27d/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="cd" t="midi:SynthesizerVoice">
+    <p n="level" v="0.59"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="350.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="378.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="ce" t="midi:LFO">
+    </p>
+   </p>
+   <!-- /Presets/nu$2dmaitre$27d/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="cf" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="331.0"/>
+     <p n="sustain" v="0.0"/>
+     <p n="release" v="327.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="release" v="742.0"/>
+    </p>
+    <p n="lfo" h="d0" t="midi:LFO">
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+  </p>
+  <!-- /Presets/hot$20soy -->
+  <p n="hot$20soy" h="d1" t="midi:SynthesizerPreset">
+   <p n="effects" h="d2" t="midi:Effects">
+    <!-- /Presets/hot$20soy/effects/Delay -->
+    <p n="Delay" h="d3" t="midi:Delay">
+     <p n="amount" v="0.335"/>
+     <p n="delayTime" v="198.0"/>
+    </p>
+   </p>
+   <!-- /Presets/hot$20soy/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="d4" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.769"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+     <p n="delay" v="388.0"/>
+     <p n="sustain" v="0.0"/>
+     <p n="release" v="1000.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="d5" t="midi:LFO">
+     <p n="frequency" v="80.7"/>
+     <p n="amount" v="8.0"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+   <!-- /Presets/hot$20soy/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="d6" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.627"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="104.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="d7" t="midi:LFO">
+     <p n="frequency" v="100.0"/>
+     <p n="amount" v="3.7"/>
+    </p>
+    <p n="detune" v="2400.0"/>
+   </p>
+   <!-- /Presets/hot$20soy/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="d8" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="triangle"/>
+    <p n="level" v="0.41"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="99.0"/>
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.502"/>
+    </p>
+    <p n="lfo" h="d9" t="midi:LFO">
+     <p n="frequency" v="71.2"/>
+     <p n="amount" v="4.5"/>
+    </p>
+    <p n="detune" v="3100.0"/>
+   </p>
+  </p>
+  <!-- /Presets/creme$20grulee -->
+  <p n="creme$20grulee" h="da" t="midi:SynthesizerPreset">
+   <p n="effects" h="db" t="midi:Effects">
+    <!-- /Presets/creme$20grulee/effects/Delay -->
+    <p n="Delay" h="dc" t="midi:Delay">
+     <p n="amount" v="0.458"/>
+     <p n="delayTime" v="330.0"/>
+    </p>
+    <!-- /Presets/creme$20grulee/effects/Distortion -->
+    <p n="Distortion" h="dd" t="midi:Distortion">
+     <p n="amount" v="49.5"/>
+    </p>
+   </p>
+   <!-- /Presets/creme$20grulee/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="de" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+     <p n="delay" v="860.0"/>
+     <p n="sustain" v="0.876"/>
+     <p n="release" v="988.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="release" v="1000.0"/>
+    </p>
+    <p n="lfo" h="df" t="midi:LFO">
+     <p n="frequency" v="1.4"/>
+     <p n="amount" v="20.3"/>
+     <p n="shared" v="false"/>
+     <p n="target" t="midi:LFOTargetType" v="volume"/>
+    </p>
+   </p>
+   <!-- /Presets/creme$20grulee/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="e0" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.212"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+     <p n="delay" v="1000.0"/>
+     <p n="sustain" v="0.037"/>
+    </p>
+    <p n="filterType" t="midi:FilterType" v="highpass"/>
+    <p n="filterLevel" v="0.91"/>
+    <p n="lfo" h="e1" t="midi:LFO">
+     <p n="frequency" v="0.4"/>
+     <p n="amount" v="9.0"/>
+     <p n="shared" v="false"/>
+    </p>
+    <p n="detune" v="600.0"/>
+   </p>
+  </p>
+  <!-- /Presets/drama$20sorbet -->
+  <p n="drama$20sorbet" h="e2" t="midi:SynthesizerPreset">
+   <p n="effects" h="e3" t="midi:Effects">
+    <!-- /Presets/drama$20sorbet/effects/Delay -->
+    <p n="Delay" h="e4" t="midi:Delay">
+     <p n="amount" v="0.307"/>
+     <p n="delayTime" v="180.0"/>
+    </p>
+   </p>
+   <!-- /Presets/drama$20sorbet/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="e5" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.278"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.65"/>
+    </p>
+    <p n="filterLevel" v="0.458"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.103"/>
+    </p>
+    <p n="lfo" h="e6" t="midi:LFO">
+     <p n="frequency" v="3.2"/>
+     <p n="amount" v="2.7"/>
+     <p n="shared" v="false"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+   <!-- /Presets/drama$20sorbet/voice1 -->
+   <p n="voice1" x="alwaysExpand=b:true" h="e7" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="square"/>
+    <p n="level" v="0.524"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="88.0"/>
+     <p n="delay" v="369.0"/>
+     <p n="sustain" v="0.32"/>
+    </p>
+    <p n="filterLevel" v="0.278"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.603"/>
+    </p>
+    <p n="lfo" h="e8" t="midi:LFO">
+     <p n="frequency" v="100.0"/>
+     <p n="amount" v="4.2"/>
+    </p>
+    <p n="detune" v="1210.0"/>
+   </p>
+   <!-- /Presets/drama$20sorbet/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="e9" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.542"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="ea" t="midi:LFO">
+    </p>
+   </p>
+   <!-- /Presets/drama$20sorbet/voice3 -->
+   <p n="voice3" x="alwaysExpand=b:true" h="eb" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.212"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="ec" t="midi:LFO">
+     <p n="frequency" v="2.8"/>
+     <p n="amount" v="5.2"/>
+    </p>
+    <p n="detune" v="1900.0"/>
+   </p>
+  </p>
+  <!-- /Presets/knam$20vargulian -->
+  <p n="knam$20vargulian" h="ed" t="midi:SynthesizerPreset">
+   <p n="effects" h="ee" t="midi:Effects">
+    <!-- /Presets/knam$20vargulian/effects/Delay -->
+    <p n="Delay" h="ef" t="midi:Delay">
+     <p n="amount" v="0.108"/>
+     <p n="delayTime" v="312.0"/>
+    </p>
+   </p>
+   <!-- /Presets/knam$20vargulian/voice -->
+   <p n="voice" x="alwaysExpand=b:true" h="f0" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="triangle"/>
+    <p n="level" v="0.769"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="467.0"/>
+     <p n="sustain" v="0.901"/>
+    </p>
+    <p n="filterLevel" v="0.637"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+    </p>
+    <p n="lfo" h="f1" t="midi:LFO">
+     <p n="frequency" v="3.2"/>
+     <p n="amount" v="1.6"/>
+    </p>
+   </p>
+   <!-- /Presets/knam$20vargulian/voice2 -->
+   <p n="voice2" x="alwaysExpand=b:true" h="f2" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="sine"/>
+    <p n="level" v="0.137"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="sustain" v="0.0"/>
+    </p>
+    <p n="lfo" h="f3" t="midi:LFO">
+     <p n="frequency" v="2.4"/>
+     <p n="amount" v="9.0"/>
+    </p>
+   </p>
+   <!-- /Presets/knam$20vargulian/voice3 -->
+   <p n="voice3" x="alwaysExpand=b:true" h="f4" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="triangle"/>
+    <p n="level" v="0.373"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="561.0"/>
+    </p>
+    <p n="filterLevel" v="0.401"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="1000.0"/>
+     <p n="sustain" v="1.0"/>
+    </p>
+    <p n="lfo" h="f5" t="midi:LFO">
+     <p n="frequency" v="3.3"/>
+     <p n="amount" v="1.2"/>
+    </p>
+    <p n="detune" v="1200.0"/>
+   </p>
+   <!-- /Presets/knam$20vargulian/voice4 -->
+   <p n="voice4" x="alwaysExpand=b:true" h="f6" t="midi:SynthesizerVoice">
+    <p n="level" v="0.099"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="420.0"/>
+    </p>
+    <p n="filterType" t="midi:FilterType" v="bandpass"/>
+    <p n="filterLevel" v="0.278"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="attack" v="90.0"/>
+     <p n="sustain" v="1.0"/>
+    </p>
+    <p n="lfo" h="f7" t="midi:LFO">
+    </p>
+    <p n="detune" v="-1200.0"/>
+   </p>
+   <!-- /Presets/knam$20vargulian/voice5 -->
+   <p n="voice5" x="alwaysExpand=b:true" h="f8" t="midi:SynthesizerVoice">
+    <p n="oscillatorType" t="midi:OscillatorType" v="noise"/>
+    <p n="level" v="0.099"/>
+    <p n="gainEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="0.0"/>
+     <p n="release" v="354.0"/>
+    </p>
+    <p n="filterType" t="midi:FilterType" v="highpass"/>
+    <p n="filterLevel" v="0.382"/>
+    <p n="filterEnvelope" t="midi:ADSREnvelope">
+     <p n="delay" v="0.0"/>
+     <p n="release" v="231.0"/>
+    </p>
+    <p n="lfo" h="f9" t="midi:LFO">
+    </p>
+   </p>
+  </p>
+ </p>
+</p>
+</bajaObjectGraph>

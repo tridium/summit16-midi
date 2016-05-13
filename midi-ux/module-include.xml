@@ -1,0 +1,76 @@
+<types>
+  <!--com.niagara.midi.baja-->
+  <type class="com.niagara.midi.baja.BMidiMessageTypeExt" name="MidiMessageTypeExt">
+    <agent>
+      <on type="midi:MidiMessage"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.baja.BSynthesizerPresetTypeExt" name="SynthesizerPresetTypeExt">
+    <agent>
+      <on type="midi:SynthesizerPreset"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.baja.BSynthesizerVoiceTypeExt" name="SynthesizerVoiceTypeExt">
+    <agent>
+      <on type="midi:SynthesizerVoice"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.baja.BLFOTypeExt" name="LFOTypeExt">
+    <agent>
+      <on type="midi:LFO"/>
+    </agent>
+  </type>
+  <!--com.niagara.midi.baja.fx-->
+  <type class="com.niagara.midi.baja.fx.BDelayTypeExt" name="DelayTypeExt">
+    <agent>
+      <on type="midi:Delay"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.baja.fx.BEffectsTypeExt" name="EffectsTypeExt">
+    <agent>
+      <on type="midi:Effects"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.baja.fx.BDistortionTypeExt" name="DistortionTypeExt">
+    <agent>
+      <on type="midi:Distortion"/>
+    </agent>
+  </type>
+  <!--com.niagara.midi.fe-->
+  <type class="com.niagara.midi.fe.BADSREnvelopeEditor" name="ADSREnvelopeEditor">
+    <agent>
+      <on type="midi:ADSREnvelope"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.fe.BMidiJsBuild" name="MidiJsBuild"/>
+  <type class="com.niagara.midi.fe.BRangeSlider" name="RangeSlider"/>
+  <type class="com.niagara.midi.fe.BSynthesizerEditor" name="SynthesizerEditor">
+    <agent>
+      <on type="midi:Synthesizer"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.fe.BMidiMessageEditor" name="MidiMessageEditor">
+    <agent>
+      <on type="midi:MidiMessage"/>
+    </agent>
+  </type>
+  <type class="com.niagara.midi.fe.BLaunchpadProWidget" name="LaunchpadProWidget">
+    <agent>
+      <on type="midi:MidiDevice"/>
+    </agent>
+  </type>
+  <!--com.niagara.midi.synth-->
+  <type class="com.niagara.midi.synth.BADSREnvelope" name="ADSREnvelope"/>
+  <type class="com.niagara.midi.synth.BFilterType" name="FilterType"/>
+  <type class="com.niagara.midi.synth.BLFO" name="LFO"/>
+  <type class="com.niagara.midi.synth.BLFOTargetType" name="LFOTargetType"/>
+  <type class="com.niagara.midi.synth.BOscillatorType" name="OscillatorType"/>
+  <type class="com.niagara.midi.synth.BSynthesizer" name="Synthesizer"/>
+  <type class="com.niagara.midi.synth.BSynthesizerPreset" name="SynthesizerPreset"/>
+  <type class="com.niagara.midi.synth.BSynthesizerVoice" name="SynthesizerVoice"/>
+  <!--com.niagara.midi.synth.fx-->
+  <type class="com.niagara.midi.synth.fx.BDelay" name="Delay"/>
+  <type class="com.niagara.midi.synth.fx.BEffects" name="Effects"/>
+  <type class="com.niagara.midi.synth.fx.BIEffect" name="IEffect"/>
+  <type class="com.niagara.midi.synth.fx.BDistortion" name="Distortion"/>
+</types>

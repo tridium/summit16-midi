@@ -1,0 +1,158 @@
+.type-midi-MidiDevice > table,
+.type-midi-Synthesizer > table {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  z-index: 1;
+}
+
+.type-midi-Synthesizer > .launchpad {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+}
+
+.type-midi-Synthesizer > .synthControls {
+  height: 26px;
+}
+
+.type-midi-Synthesizer > .synthControls > * {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.type-midi-Synthesizer > .presetEditor {
+  margin-top: 26px;
+}
+
+.type-midi-ADSREnvelope > .editor {
+  display: inline-block;
+}
+
+.type-midi-ADSREnvelope > .editor label {
+  margin-right: 0.5em;
+  width: 3em;
+  display: inline-block;
+}
+
+.RangeSlider {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.RangeSlider > label {
+  font-size: 1.6em;
+}
+
+.RangeSlider > .inputWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.RangeSlider > .inputWrapper > .display {
+  position: absolute;
+  top: 3px;
+  padding: 0 1em;
+  font-size: 1.2em;
+  pointer-events: none;
+}
+
+.RangeSlider input[type=range] {
+  -webkit-appearance: none;
+  margin: 0 0.5em;
+  vertical-align: bottom;
+  font-size: 10px;
+}
+.RangeSlider input[type=range]:focus {
+  outline: none;
+}
+.RangeSlider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.3em;
+  cursor: pointer;
+  box-shadow: .1em .1em .1em #000000, 0 0 .1em #0d0d0d;
+  background: #ffffd6;
+  border-radius: .4em;
+  border: 0 solid #010101;
+}
+.RangeSlider input[type=range]::-webkit-slider-thumb {
+  box-shadow: .08em .08em .19em rgba(0, 0, 62, 0.67), 0 0 .08em rgba(0, 0, 88, 0.67);
+  border: .19em solid rgba(0, 30, 0, 0.57);
+  height: 2.3em;
+  width: 2.3em;
+  border-radius: .4em;
+  background: #2971a9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0;
+}
+.RangeSlider input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fffff0;
+}
+.RangeSlider input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2.3em;
+  cursor: pointer;
+  box-shadow: .1em .1em .1em #000000, 0 0 .1em #0d0d0d;
+  background: #ffffd6;
+  border-radius: .4em;
+  border: 0 solid #010101;
+}
+.RangeSlider input[type=range]::-moz-range-thumb {
+  box-shadow: .08em .08em .19em rgba(0, 0, 62, 0.67), 0 0 .08em rgba(0, 0, 88, 0.67);
+  border: .19em solid rgba(0, 30, 0, 0.57);
+  height: 2.3em;
+  width: 2.3em;
+  border-radius: .4em;
+  background: #2971a9;
+  cursor: pointer;
+}
+.RangeSlider input[type=range]::-ms-track {
+  width: 100%;
+  height: 2.3em;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.RangeSlider input[type=range]::-ms-fill-lower {
+  background: #ffffbd;
+  border: 0 solid #010101;
+  border-radius: 0;
+  box-shadow: .1em .1em .1em #000000, 0 0 .1em #0d0d0d;
+}
+.RangeSlider input[type=range]::-ms-fill-upper {
+  background: #ffffd6;
+  border: 0 solid #010101;
+  border-radius: 0;
+  box-shadow: .1em .1em .1em #000000, 0 0 .1em #0d0d0d;
+}
+.RangeSlider input[type=range]::-ms-thumb {
+  box-shadow: .08em .08em .19em rgba(0, 0, 62, 0.67), 0 0 .08em rgba(0, 0, 88, 0.67);
+  border: .19em solid rgba(0, 30, 0, 0.57);
+  width: 2.3em;
+  border-radius: .4em;
+  background: #2971a9;
+  cursor: pointer;
+  height: 2.3em;
+}
+.RangeSlider input[type=range]:focus::-ms-fill-lower {
+  background: #ffffd6;
+}
+.RangeSlider input[type=range]:focus::-ms-fill-upper {
+  background: #fffff0;
+}
+
+
+.LaunchpadPro {
+  background-color: hsl(0, 0%, 30%);
+}
+.LaunchpadPro > svg {
+  width: 100%;
+  height: 100%;
+}
